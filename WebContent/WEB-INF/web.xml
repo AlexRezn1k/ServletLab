@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    
+	<servlet>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>ua.nure.reznik.Lab2.servlet.AddUserServlet</servlet-class>
+    </servlet>
+
+	<servlet>
+		<servlet-name>EditUserServlet</servlet-name>
+		<servlet-class>ua.nure.reznik.Lab2.servlet.EditUserServlet</servlet-class>
+    </servlet>
+   
+	<servlet>
+		<servlet-name>DeleteUserServlet</servlet-name>
+		<servlet-class>ua.nure.reznik.Lab2.servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+       
+    <servlet-mapping>
+    	<servlet-name>AddUserServlet</servlet-name>
+    	<url-pattern>/add.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+    	<servlet-name>EditUserServlet</servlet-name>
+    	<url-pattern>/edit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+    	<servlet-name>DeleteUserServlet</servlet-name>
+    	<url-pattern>/deleteAction.jsp</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
